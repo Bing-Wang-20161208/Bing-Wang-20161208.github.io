@@ -1,25 +1,14 @@
 <template>
   <div class="app-container">
-    <!-- 顶部导航栏 -->
-    <van-nav-bar
-      title="首页"
-      fixed
-      placeholder
-    />
-    
     <!-- 内容区域 -->
     <div class="content-container">
       <router-view />
     </div>
-    
-    <!-- 底部导航栏 -->
-    <tab-bar />
   </div>
 </template>
 
 <script setup lang="ts">
 import { onMounted } from 'vue';
-import TabBar from './components/TabBar.vue';
 
 onMounted(() => {
   // 适配移动端
